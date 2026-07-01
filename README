@@ -1,0 +1,100 @@
+## URL Shortener Web Application
+
+# About the Project
+
+This is a full-stack URL Shortener web application built using React, Node.js, Express, and MongoDB.
+
+The main purpose of this project is to convert long URLs into short and easy-to-share links. The application also tracks how many times a shortened URL has been visited and displays the analytics in a chart.
+
+In addition, a custom rate limiter has been implemented to prevent users from creating too many URLs within a short period of time.
+
+## Features
+
+1. Shorten long URLs
+2. Generate unique short links
+3. Redirect users to the original website
+4. Track click analytics
+5. View analytics in graphical format
+6. Display all created URLs
+7. Custom rate limiting to prevent abuse
+8. URL validation and error handling
+
+## Technologies Used
+
+## Frontend
+
+1. React
+2. Vite
+2. Axios
+3. Chart.js
+4. react-router-dom
+5. Plain CSS
+
+## Backend
+
+1. Node.js
+2. Express.js
+3. MongoDB
+4. Mongoose
+5. .env
+6. cors
+7. nodemon
+
+## Project Structure
+
+project/
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   └── server.js
+│
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── App.jsx
+│   └── main.jsx
+│
+└── README.md
+
+## How It Works
+
+1. The user enters a long URL.
+2. The backend generates a unique short code.
+3. The URL and short code are stored in MongoDB.
+4. A short URL is returned to the user.
+5. When someone visits the short URL, the application redirects them to the original website.
+6. Each visit is recorded in the database.
+7. Analytics data is displayed using charts on the frontend.
+
+## Installation
+
+1. Clone the Repository
+
+2. Backend Setup
+
+```bash
+cd backend
+npm install
+```
+
+3. Create a `.env` file and add:
+
+```env
+PORT=5000
+MONGO_URI=your mongoose connection string
+```
+
+4. Start the backend server:
+
+npm start
+
+5. Frontend Setup
+cd frontend
+npm install
+npm run dev
