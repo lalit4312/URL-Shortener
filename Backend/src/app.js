@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/url", urlRoutes);
-app.use("api/analytics", analyticsRoutes);
+app.use("/api/analytics", analyticsRoutes);
 app.use("/", redirectRoutes);
 
 module.exports = app;

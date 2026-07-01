@@ -5,6 +5,6 @@ const rateLimiter = require("../middleware/rateLimiter");
 const router = Router();
 
 router.post("/shorten", rateLimiter, shorten);
-router.get("/", listAll);
+router.get("/urls", listAll);
 
 module.exports = router;
